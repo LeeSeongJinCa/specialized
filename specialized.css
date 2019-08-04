@@ -1,5 +1,7 @@
 body {
     background-color: #f6f6f6;
+    padding-top: 96px !important;
+    height: 300vh;
 }
 img {
     width: 25px;
@@ -7,6 +9,13 @@ img {
 }
 
 /*! header */
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 96px;
+    z-index: 100;
+}
 /*! header-top */
 #header-top {
     display: flex;
@@ -33,10 +42,14 @@ img {
     width: 12px;
     height: 12px;
     margin-right: 10px;
+    cursor: pointer;
 }
 #country-img {
     width: 20px !important;
     height: 15px !important;
+}
+#header-top > ul > li > span {
+    cursor: pointer;
 }
 #header-top > ul > li:nth-child(2) > span {
     font-weight: bold;
@@ -84,6 +97,7 @@ img {
     height: 20px;
     margin-left: 30px;
     transition: .5s;
+    cursor: pointer;
 }
 #header-bottom > div:last-child > ul > li > img:hover {
     transform: scale(1.1);
@@ -91,7 +105,7 @@ img {
 
 /*! main */
 #main {
-    position: relative;
+    /* position: relative; */
     height: calc(100vh - 96px);
 }
 #main > div {
@@ -143,7 +157,7 @@ img {
     cursor: pointer;
     color: #fff;
     font-size: .95rem;
-    transition: .5s ease-out;
+    transition: .45s ease-out;
 }
 #main-main > div > div > button:hover {
     background-color: #101010;
@@ -164,67 +178,324 @@ img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 100;
+    cursor: pointer;
 }
-#main-bottom > span:first-child::before {
+#main-bottom > img:first-child {
     left: 30px !important;
-    background-image: url('imgs/back.svg');
 }
 #main-bottom > img:last-child {
     right: 30px !important;
 }
-
-    /* width: 100%;
-    height: 40px;
+/*! product */
+#product {
+    height: 90vh;
+    position: relative;
+}
+#product > div {
+    height: 100%;
+}
+/*! product-title */
+#product-title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 20%;
+}
+#product-title > h1 {
+    margin: 20px;
+    font-size: 1.525rem;
+    text-transform: uppercase;
+}
+/*! procut-item */
+#product-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    padding: 55px;
+}
+#product-item-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    margin: 15px;
+    background-color: #fff;
+}
+#product-item-inner > * {
+    margin-top: 15px;
+}
+#product-item-inner > img {
+    width: 80%;
+    height: 60%;
+    cursor: pointer;
+}
+#product-color {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+#product-color > li > img {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+#product-color > li > img:hover {
+    transform: scale(1.1);
+}
+#product-price > p {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 8px;
+    text-align: center;
+    color: #414141;
+    cursor: pointer;
+}
+#product-price > p:last-child {
+    font-size: 12px;
+}
+/*! side-by-side */
+#side-by-side {
+    height: 75vh;
+    padding: 15px 35px;
+}
+#side-by-side > div {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.side-inner {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    margin: 0 15px;
+}
+#left-side {
+    background-image: url('https://www.specialized.com/medias/KakaoTalk-20190312-101049068.png?context=bWFzdGVyfFNwZWNpYWxpemVkS1J8MTM1NDU3fGltYWdlL3BuZ3xoMzgvaGQ1Lzg5MjA1MTk4MDI5MTAucG5nfDM3ODJiZGE2OWQ4NjE0MzVhODk0YTQwMzBlMWE4Yzg1NGNiY2VmMDE1ZDI3Yjk1OWY2YWE2MmFlNWVkMjZkYmQ');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    width: 50%;
+}
+#right-side {
+    background-image: url('https://www.specialized.com/medias/Untitled-1.jpg?context=bWFzdGVyfFNwZWNpYWxpemVkS1J8MTUxMDg2fGltYWdlL2pwZWd8aDExL2g5ZC84OTA4NzczMzU5NjQ2LmpwZ3w0ZDg3ODMzZDc1NWMzOGJkODdiODRkYmU4ZWRiYTlkMmIzZDhhNjc2YjI4N2RkYjJlNGQ1MjEwN2JlZTgyODc4');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    width: 50%;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    white-space: nowrap;
+    color: #fff;
+}
+#right-side > h1 {
     position: absolute;
-    transform: translateY(-50%);
-    top: 50%; */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.side-inner-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#left-side-inner {
+    top: 60% !important;
+    display: flex;
+}
+#right-side-inner {
+    display: flex;
+}
+#right-side-inner > button {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.side-inner-inner > button {
+    background-color: #292929;
+    border-color: #292929;
+    padding: 1rem 2rem;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: .95rem;
+    transition: .45s ease-out;
+}
+.side-inner-inner > button:hover {
+    background-color: #101010;
+    border-color: #0a0a0a;
+}
+.side-inner-inner > button:last-child {
+    color: #fff;
+    background-color: #414141;
+    border-color: #414141;
+}
+.side-inner-inner > button:last-child:hover {
+    color: #fff;
+    background-color: #282828;
+    border-color: #222;
+}
+/*! hero */
+#hero {
+    height: 85vh;
+    border: 1px solid blue;
+    position: relative;
+    background-image: url('https://www.specialized.com/medias/-2.jpg?context=bWFzdGVyfFNwZWNpYWxpemVkS1J8MjIwMjg1fGltYWdlL2pwZWd8aDA4L2g2ZC84OTc1NzA0NzE5MzkwLmpwZ3xlODU3NzBlYzUyOWI2YjEyZDgwYWVmMjA3YmVkYjkyNjA1M2ZjODhlZGYwMDlmMmY0ODRlYjA0MzNmMGI0YjZh');
+    background-size: cover;
+    background-position: 50%;
+}
+#hero-inner {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+#hero-inner > h5 {
+    font-size: .75rem;
+    line-height: .75rem;
+    letter-spacing: .1875rem
+}
+#hero-inner > h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding-bottom: 1.25rem;
+}
+#hero-inner-button {
+    display: flex;
+}
+#hero-inner-button > button {
+    background-color: #292929;
+    border-color: #292929;
+    padding: 1rem 2rem;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: .95rem;
+    transition: .45s ease-out;
+}
+#hero-inner-button > button:hover {
+    background-color: #101010;
+    border-color: #0a0a0a;
+}
+#hero-inner-button > button:last-child {
+    color: #fff;
+    background-color: #414141;
+    border-color: #414141;
+}
+#hero-inner-button > button:last-child:hover {
+    color: #fff;
+    background-color: #282828;
+    border-color: #222;
+}
+/*! footer */
+#footer {
+    position: relative;
+    padding: 40px 0 60px;
+    background: #121212;
+    color: #fff;
+    border: 2px solid red;
+}
+#footer-inner {
+    display: flex;
+    height: 100%;
+    border: 2px solid blue;
+}
+#footer-inner > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    min-height: 200px;
+    padding: 0 50px;
+    border: 3px solid red;
+}
+#footer-inner-left {
+    align-items: flex-start !important;
+    border: 2px solid blue !important;
+}
+#footer-inner-left-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer-inputs {
+    padding: 10px;
+    border: 0;
+}
+#footer-inner-left-input > input {
+    width: 300px;
+    background-color: #414141;
+    color: #fff;
+    border-color: #414141;
+    outline: none;
+}
+#footer-inner-left-input > button {
+    width: 80px;
+    color: #fff;
+    background-color: #c61017;
+    border-color: #c61017;
+    outline: none;
+    cursor: pointer;
+}
+#footer-inner-left > p {
+    font-size: 10px;
+    color: #8e8e8e;
+}
+#footer-inner-left > p > span {
+    text-decoration: underline;
+    color: #fff;
+    transition: .2s;
+    cursor: pointer;
+}
+#footer-inner-left > p > span:hover {
+    color: #ff0000;
+}
+#footer-inner > div:nth-child(2) {
+    flex: 1.5 !important;
+}
+#footer-inner-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+#footer-inner-ul > a {
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+}
+#footer-inner-ul > a > li {
+    margin: 0 10px;
+    white-space: nowrap;
+    font-size: 12px;
+    transition: .2s ease-out;
+    color: #fff;
+}
+#footer-inner-ul > a > li:hover {
+    color: #ff0000;
+}
+#footer-inner-middle > div {
+    text-align: center;
+    font-size: 10px;
+    padding: 15px 10px;
+    color: #999999;
+}
+#footer-inner-middle > div > span {
+    padding: 10px;
+}
 
 
 
