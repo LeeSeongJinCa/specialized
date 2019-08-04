@@ -344,7 +344,6 @@ img {
 /*! hero */
 #hero {
     height: 85vh;
-    border: 1px solid blue;
     position: relative;
     background-image: url('https://www.specialized.com/medias/-2.jpg?context=bWFzdGVyfFNwZWNpYWxpemVkS1J8MjIwMjg1fGltYWdlL2pwZWd8aDA4L2g2ZC84OTc1NzA0NzE5MzkwLmpwZ3xlODU3NzBlYzUyOWI2YjEyZDgwYWVmMjA3YmVkYjkyNjA1M2ZjODhlZGYwMDlmMmY0ODRlYjA0MzNmMGI0YjZh');
     background-size: cover;
@@ -404,12 +403,10 @@ img {
     padding: 40px 0 60px;
     background: #121212;
     color: #fff;
-    border: 2px solid red;
 }
 #footer-inner {
     display: flex;
     height: 100%;
-    border: 2px solid blue;
 }
 #footer-inner > div {
     display: flex;
@@ -419,11 +416,9 @@ img {
     flex: 1;
     min-height: 200px;
     padding: 0 50px;
-    border: 3px solid red;
 }
 #footer-inner-left {
     align-items: flex-start !important;
-    border: 2px solid blue !important;
 }
 #footer-inner-left-input {
     display: flex;
@@ -436,7 +431,7 @@ img {
     border: 0;
 }
 #footer-inner-left-input > input {
-    width: 300px;
+    width: 250px;
     background-color: #414141;
     color: #fff;
     border-color: #414141;
@@ -477,6 +472,9 @@ img {
     height: 20px;
     line-height: 20px;
 }
+#footer-inner-ul > a:hover > li {
+    color: #ff0000;
+}
 #footer-inner-ul > a > li {
     margin: 0 10px;
     white-space: nowrap;
@@ -484,22 +482,54 @@ img {
     transition: .2s ease-out;
     color: #fff;
 }
-#footer-inner-ul > a > li:hover {
-    color: #ff0000;
-}
 #footer-inner-middle > div {
     text-align: center;
-    font-size: 10px;
     padding: 15px 10px;
     color: #999999;
 }
 #footer-inner-middle > div > span {
-    padding: 10px;
+    padding: 0 5px;
+    font-size: 10px;
 }
-
-
-
-
+#footer-inner-middle > div > span > a {
+    color: #999999;
+    transition: .25s ease-out;
+}
+#footer-inner-middle > div > span > a:hover {
+    color: #ff0000;
+}
+#footer-inner-right {
+    position: relative;
+}
+#footer-inner-right-findStore {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: #414141;
+    transition: .45s;
+}
+#footer-inner-right-findStore:hover {
+    background-color: #ff0000;
+}
+#footer-inner-right-findStore > a {
+    color: #fff;
+    text-decoration: none;
+}
+#footer-inner-right-img {
+    position: relative;
+    top: 80px;
+}
+#footer-inner-right-img > img {
+    width: 20px;
+    height: 20px;
+    margin: 0 15px;
+}
+#footer-inner-right-img > img:hover {
+    transform: scale(1.2);
+}
 
 
 
